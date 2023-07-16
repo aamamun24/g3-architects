@@ -14,7 +14,7 @@
 .section-description{
     font-size: 1rem;
     color: #727272;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
 }
 .btn{
     padding: 20px 25px;
@@ -75,6 +75,7 @@ nav li a{
 main{
     max-width: 1440px;
     margin: 70px auto;
+    padding: 0 130px;
 }
 main section{
     margin-top: 70px;
@@ -84,7 +85,6 @@ main section{
     display: flex;
     align-items: center;
     gap: 40px;
-    padding: 0 130px;
 }
 .team-img-container{
     display: grid;
@@ -99,9 +99,6 @@ main section{
     color: #FF900E;
 }
 /* facts styles */
-.facts{
-    padding: 0 130px;
-}
 .card-container{
     display: flex;
     justify-content: space-around;
@@ -123,9 +120,20 @@ main section{
     font-size: 1.25rem;
     font-weight: 600;
 }
-
-
-
+/* sponsor styles */
+.sponsor{
+    text-align: center;
+}
+.sponsor-img-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 20px;
+    align-items: center;
+}
+.sponsor-img-container img{
+    width: 165px;
+}
 
 
 
@@ -136,16 +144,18 @@ main section{
 /* Responsive media query */
 /* mobile device */
 @media screen and (max-width: 576px) {
-    header{
+    header,
+    main
+    {
         padding: 20px;
     }
-    .team-content,
-    .facts{
-        padding: 0 20px;
+    main section{
+        margin-top: 35px;
     }
     nav,
     .team-container,
-    .card-container
+    .card-container,
+    .sponsor-img-container
     {
         flex-direction: column;
     }
@@ -159,10 +169,16 @@ main section{
 /* medium devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
     header,
-    .facts{
+    main
+    {
         padding: 50px;
     }
-    nav{
+    main section{
+        margin-top: 50px;
+    }
+    nav,
+    .sponsor-img-container
+    {
         flex-direction: column;
     }
     .team-container
