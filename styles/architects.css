@@ -9,20 +9,22 @@
 .section-description{
     font-size: 1rem;
     color: #727272;
+    margin: 2rem auto;
 }
 .btn{
     padding: 20px 25px;
     background-color: #FF900E;;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     color: #fff;
     border: none;
+    cursor: pointer;
 }
 /* header styles */
 header{
     background-color: rgba(255, 144, 14, 0.10);
-    padding: 50px 240px;
+    padding: 50px 130px;
 }
 nav {
     display: flex;
@@ -58,4 +60,35 @@ nav li a{
     color: #131313;
     font-size: 4rem;
     font-weight: 700;
+    margin-top: 25px;
+}
+.banner-img{
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* Responsive media query */
+/* mobile device */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav > ul {
+        margin-top: 25px;
+    }
+}
+/* medium devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav > ul {
+        margin-top: 25px;
+    }
 }
